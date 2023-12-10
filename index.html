@@ -20,7 +20,7 @@
     <ul class="nav-links">
         <li><a href="https://shiv-xmm.github.io/Shivam-Server/">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="https://shiv-xmm.github.io/Shivam-Server/">Services</a></li>
         <li><a href="#">Contact</a></li>
     </ul><BR><BR><BR><BR><BR>
 </nav>
@@ -30,16 +30,25 @@
     </div>
   </div>
   
-  <form name="contact" data-netlify="true">
-    <p>
-      <label>Name <input type="text" name="name" /></label>
-    </p>
-    <p>
-      <label>Email <input type="email" name="email" /></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
+  <form id="contact-form" method="POST" action="https://formsubmit.co/shiv.xmm13@gmail.com">
+    <div class="form-row form-error" style="display:none;"></div>
+    <div class="form-row">
+      <label for="contact-form-name">Name:</label>
+      <input id="contact-form-name" class="form-input" type="text" name="name" required>
+    </div>
+    <div class="form-row">
+      <label for="contact-form-email">Email:</label>
+      <input id="contact-form-email" class="form-input" type="email" name="email" required>
+    </div>
+    <div class="form-row">
+      <label for="contact-form-email">Instagram (if you have):</label>
+      <input id="contact-form-email" class="form-input" type="insta" name="insta">
+    </div>
+    <div class="form-row">
+      <label for="contact-form-message">Message:</label>
+      <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
   </form>
 <!--Hello-->
 <BR><BR><BR><BR> <div class="waviy">
